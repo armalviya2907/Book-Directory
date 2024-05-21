@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Directory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #books {
+            margin-top: 20px;
+        }
+        .book {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination button {
+            margin: 0 5px;
+        }
+        #bookDetails {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Directory</h1>
+    <div>
+        <label for="search">Search by Title:</label>
+        <input type="text" id="search" placeholder="Search by title...">
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Search by author...">
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" placeholder="Search by genre...">
+    </div>
+    <div id="books"></div>
+    <div class="pagination">
+        <button id="prevPage">Previous</button>
+        <span id="pageInfo"></span>
+        <button id="nextPage">Next</button>
+    </div>
+
+    <div id="bookDetails">
+        <button id="backToList">
